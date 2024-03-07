@@ -55,11 +55,12 @@
     margin-top: -1.7rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     margin: 0 auto;
     height: 90vh;
     width: 100%;
     padding-top: 1rem;
+    max-width: 1300px;
 }
 
 .section-intro .intro_image {
@@ -78,7 +79,7 @@
 
 .section-intro .intro_image_pict {
    margin: 0 auto;
-   margin-left: 100px;
+   
 }
 
 .section-intro .intro_image {
