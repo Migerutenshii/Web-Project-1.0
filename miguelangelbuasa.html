@@ -58,7 +58,7 @@
                     </div>
                     <div class="intro_icons">
                         
-                        <button class="icons_project" style="width: 5rem;">projects</button>
+                        <button class="icons_project" style="width: 8rem;">projects</button>
                         <i class="fa-brands fa-square-facebook"></i>
                         <i class="fa-brands fa-square-github" ></i>
                         <i class="fa-brands fa-linkedin" ></i>
@@ -72,20 +72,113 @@
         <div class="section-feature">
             <div class="featured_heading">
                 <div class="heading_2">Featured Projects</div>
-                <label>
+                <label class="label">
                     _Selected Projects
                 </label>
+            </div>
+            <div class="featured-item">
+                <div class="featured_image-container">
+                    <div style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0;">
+                        <div style="box-sizing: border-box; max-width: 100%;">
+                            <img style="max-width: 100%; display: block; margin: 0; border: none; padding: 0;" src="img/transparentbg.png" alt="Not Available">
+                            <img style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; box-sizing: border-box;padding: 0; border: none; margin: auto; display: block; width: 0; height: 0; max-width: 100%; min-width: 100%; max-height: 100%; min-height: 100%;" src="img/featured-projects 1.png" alt="">
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="featured-content">
+                    <h2 class="heading_2">TripGuide</h2>
+                    <h5 class="heading_5">Ultimate-Guides</h5>
+                    <p>Search for amazing hotel deals and save money today. Compare Prices & Save Money with TripGuide</p>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="content-icons">
+                        <button style="width: 8rem; padding: 1rem 0;">Take a look</button>
+                        <i style="font-size: 3rem;" class="fa-brands fa-square-github" ></i>
+                    </div>
+                </div>
+                
+
+                
+
             </div>
         </div>
 
     </div>
 </body>
 <style>
-    .section-feature {
-        padding-top: 5rem;
-        max-width: 1200px;
-        margin: 0 auto;
+    .featured-item {
+        width: 100%;
+        display: flex;
+        position: relative;
+        margin: 10rem 0;
     }
+    featured-item::before {
+        left: 9%;
+        width: 82%;
+        border-radius: 2rem;
+        transform: rotate(-1deg);
+    }
+
+    .featured-item .featured_image-container {
+        width: 60%;
+        padding: 2.4rem;
+    }
+
+    .featured-item .featured-content h2 {
+        font-weight: 800;
+        font-size: 3rem;
+        text-shadow: 2px 4px 3px rgba(0,0,0,.1);
+        margin-bottom: .8rem;
+        margin-left: 0;
+    }
+
+    .featured-item .featured-content h5 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: .2rem;
+    }
+
+    ..featured-item .featured-content p{
+        font-weight: 400;
+    }
+
+    .featured-item .content-icons {
+        display: flex;
+        gap: 2rem;
+    }
+    .featured-item .content-icons button {
+        border-radius: 10px;
+        padding: 0 5px;
+        background: #00331a;
+        box-shadow: 0 8px 32px 0 rgba(70, 139, 70, 0.37);
+        backdrop-filter: blur( 50px );
+        -webkit-backdrop-filter: blur( 50px );
+        border: none;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .featured-item .content-icons button:hover {
+        background-color: #0c6;
+        transform: scale(1.1);
+        transition: ease-in-out .4s;
+    }
+
+    .featured-item .content-icons i:hover{
+        color: #0c6;
+        transform: scale(1.1);
+        transition: ease-in-out .4s;
+    }
+  
+
+    
+   
+
+
   
 
    
