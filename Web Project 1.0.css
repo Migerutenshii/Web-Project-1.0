@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Madimi One", sans-serif;
+}
+.header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+}
+.header .logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffff;
+
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 16px;
+    color:#ffff;
+}
+.banner {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+
+}
+.banner .glass-wrapper {
+    width: 30%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.herotitle {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+}
+.herotitle p{
+    font-size: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: white;
+}
+.herotitle .Province {
+    font-size: 85px;
+    letter-spacing: 3px;
+
+}
+.herotitle .details {
+    width: 60%;
+    padding-top: 1.5rem;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1.5px;
+    padding-bottom: 2.5rem;
+}
+.herotitle .explorer button {
+    background: rgba( 189, 189, 189, 0.299 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
