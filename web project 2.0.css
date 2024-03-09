@@ -14,21 +14,39 @@
     box-sizing: inherit;
 }
 
+section {
+    padding-top: 8rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .header {
     padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    max-width: 1500px;
+    gap: 700px;
     margin: 0 auto;
     align-items: center;
-    gap: 50px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.116);
+    
+
+    
 }
 .header .logo { 
     font-size: 20px;
     letter-spacing: 2px;
     color: #00331a;
     font-weight: 600;
+    
+    
+    
 
+}
+.header .logo a {
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 .header .logo:hover {
@@ -51,50 +69,67 @@
 .header a {
     text-decoration: none;
     color: #00331a;
-    
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.nav_menu:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .6s;
 }
 
 .header a:hover {
-    color: #0c6;
+    color: rgb(0, 0, 0);
     transition: ease-in-out .4s;
+    background-color: #0c6;
+    
 }
 
 /* On screens that are 375px or less, set the background color to blue */
 @media screen and (max-width: 667px) {
     .header {
-        display: inline;
-        width: 100%;
+    display: inline;
+    width: 100%;
+    border-bottom: none;
+    border: solid rgba(0, 51, 26, .032);
+    padding: 0;
+    
+    
+        
+        
     }
 
    .header .logo {
     position: absolute;
-    padding: 10px;
     display: block;
     font-size: 1rem;
+    
    }
    .header ul {
     display: block;
-    padding: 20px;
+    padding: 25px;
+    padding-bottom: 0;
+    
    }
 
   }
 
 .section-intro {
-    margin-top: -1.7rem;
     display: flex;
     align-items: center;
     gap: 80px;
-    margin: 0 auto;
     height: 80vh;
     width: 100%;
     padding-top: 1rem;
-    max-width: 1400px;
+    
+    
 }
 
 .section-intro .intro_image {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding-top: 150px;
       
 }
 
@@ -148,14 +183,14 @@
 .section-intro .icons_project {
     border-radius: 10px;
     padding: 0 5px;
-    background: #00331a;
-    box-shadow: 0 8px 32px 0 rgba(70, 139, 70, 0.37);
-    backdrop-filter: blur( 50px );
+    background: rgba(0, 189, 0, 0.575);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 95, 0.37);
+    backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 50px );
     border: none;
     letter-spacing: 1.5px;
     font-weight: 600;
-    color: white;
+    color: #00331a;
     
     
     
@@ -248,13 +283,6 @@
    
 }
 
-.section-feature {
-    padding-top: 3rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    
-}
-
 .section-feature .featured_heading {
     margin-bottom: 4.1rem;
 }
@@ -262,7 +290,6 @@
 .section-feature .heading_2 {
     font-weight: 700;
     font-size: 2rem;
-    text-shadow: 2px 4px 5px rgba(0,0,0,.1);
     margin: .8rem;
 }
 
@@ -372,4 +399,127 @@
     border-radius: 2rem;
     transform: rotate(-1deg);
 }
+
+
+/* this is for about me */
+/* this is for about me */
+/* this is for about me */
+/* On screens that are 375px or less, set the background color to blue */
+@media screen and (max-width: 667px) {
+   .section-about-me {
+    flex-direction: column;
+    width: unset;
+    padding: 10px 10px;
+    
+   }
+   .card-about_content{
+    margin-bottom: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .card-content {
+    font-size: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+}
+
+
+.section-about-me {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+   }
+.card-about_content {
+    padding: 1.6rem 2.4rem;
+    border-radius: 2rem;
+    position: relative;
+    max-width: 45%;
+}
+.card-about_icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    gap: 10px;
+    
+}
+.section-about-me .fa-brands {
+    z-index: 1;
+}
+.card-about_icons :hover {
+    color: #0c6;
+    transform: scale(1.1);
+    transition: ease-in-out .4s;
+}
+
+.heading_2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow:  4px 5px rgba(0,0,0,.1);
+    line-height: 110%;
+    margin-bottom: .8rem;
+    
+
+}
+.card_body {
+    font-weight: 400;
+    margin: 1.6rem 0 2.4rem;
+    text-align: justify;
+}
+
+
+.card-about_content::after {
+    left: 8%;
+    width: 80%;
+    border-radius: 2rem;
+    background-color: rgba(0, 51, 26, .032);
+   
+}
+
+.card-about_content:after, .card-about_content::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    height: 120%;
+    
+}
+
+.card-about_content::before{
+    border: 2px solid rgba(0, 51, 26, .089);
+}
+
+
+.card-about_content::before {
+    left: 9%;
+    width: 82%;
+    border-radius: 2rem;
+    transform: rotate(-1deg);
+    
+}
+.about-me_image-sec {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.image_gallery {
+    overflow: hidden;
+    transform: rotate(1.2deg);
+    border-radius: 2rem;
+    transition: all .8s ease-in-out;
+    opacity: 40%;
+    
+}
+
+.image_gallery:hover {
+    opacity: 100%;
+    transform: scale(1.4);
+    transition: all .5s ease-out;
+    
+}
+/* this is for about me */
+/* this is for about me */
 

@@ -3,6 +3,11 @@
     padding: 0px;
     font-family: "Madimi One", sans-serif;
 }
+.section {
+    padding-top: 8rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .header {
     padding: 1.5rem;
     display: flex;
