@@ -35,7 +35,7 @@ section {
     
 }
 .header .logo { 
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
     color: #00331a;
     font-weight: 600;
@@ -46,7 +46,7 @@ section {
 }
 .header .logo a {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 3px 5px;
 }
 
 .header .logo:hover {
@@ -238,6 +238,11 @@ section {
     }
 
 }
+
+/* this is for Featured Section */
+/* this is for Featured Section */
+/* this is for Featured Section */
+
 /* On screens that are 375px or less, set the background color to blue */
 @media screen and (max-width: 667px) {
     .section-feature {
@@ -369,6 +374,19 @@ section {
     z-index: 1;
 }
 
+.featured-item::before{
+    border: 2px solid rgba(0, 51, 26, .089);
+}
+
+
+.featured-item::before {
+    left: 9%;
+    width: 82%;
+    border-radius: 2rem;
+    transform: rotate(-1deg);
+}
+
+
 .featured-item:after {
     background-color: rgba(0, 51, 26, .032);
 }
@@ -387,19 +405,6 @@ section {
     
     
 }
-
-.featured-item::before{
-    border: 2px solid rgba(0, 51, 26, .089);
-}
-
-
-.featured-item::before {
-    left: 9%;
-    width: 82%;
-    border-radius: 2rem;
-    transform: rotate(-1deg);
-}
-
 
 /* this is for about me */
 /* this is for about me */
@@ -424,6 +429,7 @@ section {
     margin: 0;
     padding: 0;
    }
+
 }
 
 
@@ -520,6 +526,32 @@ section {
     transition: all .5s ease-out;
     
 }
-/* this is for about me */
-/* this is for about me */
+/* this is for What I do */
+/* this is for What I do*/
+/* this is for What I do*/
+
+.what-I-do {
+    margin-bottom: 50px;
+ }
+ .what-I-do .what-I-do_content {
+    display: flex;
+    gap: 50px;
+ }
+
+ .what-I-do_container {
+    margin-bottom: 5rem;
+ }
+ .what-I-do_container .heading_2 {
+    padding: 20px 0;
+    font-weight: 700;
+ }
+ .what-I-do .what_I_do-title {
+    font-weight: 600;
+    padding-bottom: 20px;
+ }
+ .what-I-do p {
+    padding-bottom: 20px;
+ }
+
+
 
